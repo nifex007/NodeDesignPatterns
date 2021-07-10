@@ -12,8 +12,16 @@ class Shopper {
         }else{
             console.log(`Purchasing item ${item.name}`)
             this.account -= item.price;
-            t
+            this.item.push(item);
         }
     }
 
+    printStatus(){
+        console.log(`${this.name} has purchased ${this.items.length} items: `);
+        this.items.forEach(item => console.log(` * ${item.name} - ${item.price}`));
+        console.log(`${this.name} has $${this.account.toFixed(2)} remaining`);
+    }
+
 }
+
+module.exports = Shopper;
