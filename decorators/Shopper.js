@@ -12,7 +12,7 @@ class Shopper {
         }else{
             console.log(`Purchasing item ${item.name}`)
             this.account -= item.price;
-            this.item.push(item);
+            this.items.push(item);
         }
     }
 

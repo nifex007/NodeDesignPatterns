@@ -1,5 +1,5 @@
 const Shopper = require('./Shopper');
-const InventoryItem = require('/InventoryItem');
+const InventoryItem = require('./InventoryItem');
 
 const jon = new Shopper('Jon', 100000);
 
