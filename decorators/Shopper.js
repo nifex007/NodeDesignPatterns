@@ -18,7 +18,7 @@ class Shopper {
 
     printStatus(){
         console.log(`${this.name} has purchased ${this.items.length} items: `);
-        this.items.forEach(item => console.log(` * ${item.name} - ${item.price}`));
+        this.items.forEach(item => console.log(` * ${item.name} - ${item.price.toFixed(2)}`));
         console.log(`${this.name} has $${this.account.toFixed(2)} remaining`);
     }
 

@@ -1,8 +1,5 @@
 /**
  * Pattern Name: Decorator
- * The Problem: 
- * The Solution:
- * Consequence: 
  * 
  * 
  * Decorators are design patterns that allows us to dynamically attach additonal properties, methods to existing objects
@@ -24,5 +21,28 @@ class InventoryItem {
     }
 }
 
+class GoldenInventoryItem {
+    constructor(baseItem) {
+        this.name = `Golden ${baseItem.name}`
+        this.price = baseItem.price + 10000
+    }
+}
 
-module.exports = InventoryItem;
+class DiamondInventoryItem {
+    constructor(baseItem) {
+        this.name = `Diamond ${baseItem.name}`
+        this.price = baseItem.price + 100000
+        this.cutsGlass = true
+    }
+
+    print() {
+        console.log(`${item.name} costs more`);
+    }
+
+
+
+
+}
+
+
+module.exports = {InventoryItem, GoldenInventoryItem, DiamondInventoryItem};
