@@ -11,4 +11,5 @@ class Store {
     }
 }
 
+
 modules.export = Store;
