@@ -1,6 +1,7 @@
 class Logger {
+    
     constructor() {
-        this.logs= [];
+        this.logs = [];
     }
 
     get count(){
@@ -14,4 +15,4 @@ class Logger {
     }
 }
 
-module.exports = Logger();
+module.exports = Logger;

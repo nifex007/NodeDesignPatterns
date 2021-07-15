@@ -12,4 +12,4 @@ class Store {
 }
 
 
-modules.export = Store;
+module.exports = Store;

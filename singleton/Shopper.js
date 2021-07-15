@@ -9,4 +9,4 @@ class Shopper {
     }
 }
 
-module.export = Shopper;
+module.exports = Shopper;
