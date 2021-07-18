@@ -1,5 +1,4 @@
-const Logger = require("./Logger");
-const logger = new Logger();
+const logger = require("./Logger");
 
 
 class Store {

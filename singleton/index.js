@@ -5,12 +5,10 @@
  * 
  **/
 
-const Logger = require('./Logger');
+const logger = require('./Logger');
 const Shopper = require('./Shopper');
 const Store = require('./Store');
 
-
-const logger = new Logger();
 
 logger.log('starts app..');
 
